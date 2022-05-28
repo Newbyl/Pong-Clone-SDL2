@@ -124,7 +124,7 @@ public:
 	void Draw(SDL_Renderer* renderer)
 	{
 		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-		TTF_Font* font = TTF_OpenFont("hack.ttf", 35);
+		TTF_Font* font = TTF_OpenFont("font/hack.ttf", 35);
 		
 		SDL_Surface* sP1 = TTF_RenderText_Blended(font, &to_string(scoreP1)[0], SDL_Color{ 255, 255, 255, 255 });
 		SDL_Surface* sP2 = TTF_RenderText_Blended(font, &to_string(scoreP2)[0], SDL_Color{ 255, 255, 255, 255 });
